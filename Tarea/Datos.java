@@ -6,11 +6,12 @@ import java.util.Scanner;
 
 public class Datos {
     
-    private ArrayList<String> sopaDeLetras = new ArrayList<String>();
+    private ArrayList<String> sopaDeLetras;
     private String nombreArchivo;
 
     public Datos(String nombreArchivo){
         this.nombreArchivo = nombreArchivo;
+        this.sopaDeLetras = new ArrayList<String>();
     }
 
 	public void Leer(){
