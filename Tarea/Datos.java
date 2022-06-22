@@ -20,6 +20,8 @@ public class Datos {
             File archivo = new File(nombreArchivo);
             Scanner obj = new Scanner(archivo);
             String aux;
+            //Recorremos linea a linea y agregamos al arreglo
+            //sopaDeLetras = [linea1, linea2, linea3...]
 		    while(obj.hasNextLine()){
 		    	aux = obj.nextLine();
 		    	sopaDeLetras.add(aux);
@@ -32,6 +34,7 @@ public class Datos {
         }       
     }
 
+    //Retorna la SopaDeLetras del archivo
     public ArrayList<String> getSopaDeLetras(){
         return sopaDeLetras;
     }
