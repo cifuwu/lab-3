@@ -6,7 +6,7 @@ public class Main {
 	public static void main(String[] args) throws Exception {		
 		
 		ArrayList<String> sopaDeLetras = new ArrayList<String>();
-		Datos archivo = new Datos("DireccionDeArchivo");
+		Datos archivo = new Datos("hola.txt");
 		archivo.Leer();
 		sopaDeLetras = archivo.getSopaDeLetras();
 
