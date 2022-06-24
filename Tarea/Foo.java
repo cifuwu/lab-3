@@ -5,10 +5,15 @@ Atributos: Value -> Valor a guardar
 Metodo: getValue() -> Devuelve el valor de Value.
 */
 
-public class Foo extends Thread {
+public class Foo implements Runnable {
+    private volatile Long value;
 
     @Override
-    public void run(){
-        
+    public void run() { 
+       value = System.nanoTime();
     }
- }
+
+    public long getValue() {
+        return value;
+    }
+}
