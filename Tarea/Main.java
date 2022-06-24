@@ -2,7 +2,7 @@ package Tarea;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-
+import java.lang.*;
 import javax.swing.JSpinner.NumberEditor;
 
 public class Main {
@@ -14,7 +14,7 @@ public class Main {
 		
 
 		ArrayList<String> sopaDeLetras = new ArrayList<String>();
-		Datos archivo = new Datos("C:\\Users\\pavez\\Desktop\\TareasSo\\Tarea 3\\T3\\Tarea\\hola.txt");
+		Datos archivo = new Datos("sopa.txt");
 		archivo.Leer();
 		/*sopaDeLetras = [	linea1,
 							linea 2
@@ -46,6 +46,9 @@ public class Main {
 
 	
 	}
+
+
+
 
 	//Convierte a un arreglo de char
 	public static char[][] Convertir(ArrayList<String> sopaDeLetras, int size_sopaDeLetras){

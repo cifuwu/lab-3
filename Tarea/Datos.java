@@ -2,7 +2,7 @@ package Tarea;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Scanner;
-
+import java.lang.*;
 
 public class Datos {
     
