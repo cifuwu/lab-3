@@ -30,7 +30,9 @@ public class Foo extends Thread {
             line = cuadrante.get(i).toLowerCase();
             //En el caso de que encuentra la palbra de forma horizontal a la derecha o horizontal invertida (izq -> der)
             if (line.contains(palabra) || line.contains(palabra_invert) ){
-                pos = line.indexOf(palabra);
+                pos =   cuadrante.indexOf(palabra); // retorna la posicion dentro del cuadrante
+
+                //falta saber el numero del cuadrante
             }
         }
     }

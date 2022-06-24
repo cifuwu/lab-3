@@ -30,7 +30,7 @@ public class Datos {
 		    obj.close();
 
         } catch (Exception e) {
-            System.out.println("Ocurrio un error con el archivo "+e);
+            System.out.println("Ocurrio un error con el archivo: "+e);
         }       
     }
 
